@@ -48,7 +48,7 @@ class ObjectTest {
         //  `sameReference` and `instanceCreatedByMethod`.
         //
         // <--start
-        final Object expected = new Object();
+        final Object expected = sameReference;
         // --end-->
 
         assertEquals(expected, objectReference);
