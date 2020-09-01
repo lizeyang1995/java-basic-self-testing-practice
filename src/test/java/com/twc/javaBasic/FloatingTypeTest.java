@@ -14,7 +14,7 @@ class FloatingTypeTest {
         //  Please write down the answer directly.
         //
         // <!--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = 2;
         // --end-->
 
         assertEquals(expected, integer);
