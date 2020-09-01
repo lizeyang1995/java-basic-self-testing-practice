@@ -3,6 +3,9 @@ package com.twc.javaBasic;
 import com.twc.javaBasic.util.Pair;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GenericTest {
@@ -52,8 +55,14 @@ class GenericTest {
   //  You should not change the signature of the function. But you can change
   //  the declaration of the generic type parameter.
   // <--start
-  private static <T> T min(T[] values) {
-    throw new RuntimeException("Not implemented");
+  private static <T extends Number & Comparable<T>> T min(T[] values) {
+    T minValue = values[0];
+    for (T item : values) {
+      if (item.compareTo(minValue) < 0) {
+        minValue = item;
+      }
+    }
+    return minValue;
   }
   // --end-->
 
