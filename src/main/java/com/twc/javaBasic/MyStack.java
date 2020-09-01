@@ -24,7 +24,7 @@ public class MyStack {
 
         // TODO: Please push the value into the storage here.
         // <--start
-
+        storage[count] = value;
         // --end-->
     }
 
