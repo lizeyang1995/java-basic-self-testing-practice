@@ -40,6 +40,7 @@ public class MyStack {
         //
         // <--start
         storage = Arrays.copyOf(storage, newCapacity);
+        capacity = newCapacity;
         // --end-->
     }
 
@@ -59,7 +60,9 @@ public class MyStack {
         //  Please pop one element from the array. You should update the `count` field
         //  as well.
         // <--start
-
+        if (count > 0) {
+            return storage[--count];
+        }
         // --end-->
 
         throw new UnsupportedOperationException("Stack is empty.");
