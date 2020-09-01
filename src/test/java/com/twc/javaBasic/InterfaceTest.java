@@ -32,7 +32,7 @@ class InterfaceTest {
         //  Please write down your answer directly.
         //
         // <--start
-        final String expected = "";
+        final String expected = "The truth of the universe is Anime";
         // --end-->
 
         assertEquals(expected, instance.tellMeTheTruthOfTheUniverse());
