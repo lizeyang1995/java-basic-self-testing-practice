@@ -17,7 +17,7 @@ class StringTest {
         //  Please modify the following line to pass the test. It is really easy to pass
         //  the test. But you have to tell why.
         // <--start
-        final boolean areSame = true;
+        final boolean areSame = false;
         // --end-->
 
         assertEquals("The new string", modifiedString);
