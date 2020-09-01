@@ -78,7 +78,7 @@ class CollectionsTest {
         //  Please write down your answer directly.
         //
         // <--start
-        final List<Integer> expected = null;
+        final List<Integer> expected = Arrays.asList(0, 1, 2, 10, 11);
         // --end-->
 
         assertIterableEquals(expected, integers);
