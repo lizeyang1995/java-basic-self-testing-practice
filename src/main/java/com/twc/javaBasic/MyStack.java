@@ -1,5 +1,7 @@
 package com.twc.javaBasic;
 
+import java.util.Arrays;
+
 @SuppressWarnings({"unused", "FieldCanBeLocal"})
 public class MyStack {
     private int[] storage;
@@ -24,7 +26,7 @@ public class MyStack {
 
         // TODO: Please push the value into the storage here.
         // <--start
-        storage[count] = value;
+        storage[count++] = value;
         // --end-->
     }
 
@@ -37,7 +39,7 @@ public class MyStack {
         //  IMPORTANT: You SHOULD NOT USE COLLECTIONS (such as List<T>) OTHER THAN ARRAY.
         //
         // <--start
-
+        storage = Arrays.copyOf(storage, newCapacity);
         // --end-->
     }
 
