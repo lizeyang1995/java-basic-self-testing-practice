@@ -71,7 +71,7 @@ class FloatingTypeTest {
         // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
-        throw new RuntimeException("Not implemented");
+        return Double.isNaN(realNumber);
     }
 
     @SuppressWarnings("unused")
@@ -79,6 +79,6 @@ class FloatingTypeTest {
         // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
-        throw new RuntimeException("Not implemented");
+        return Double.isInfinite(realNumber);
     }
 }
