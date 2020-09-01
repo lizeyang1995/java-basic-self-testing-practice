@@ -29,7 +29,7 @@ class InheritanceTest {
         // Hint: check https://beginnersbook.com/2013/03/constructors-in-java/
         //
         // <--start
-        final String[] expected = {};
+        final String[] expected = {"SuperClassWithDefaultConstructor.constructor()", "DerivedFromSuperClassWithDefaultConstructor.constructor()"};
         // --end-->
 
         String[] logs = instance.getLogs();
